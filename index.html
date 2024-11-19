@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LocaConnect - Contact Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-container">
+        <h2>اتصل بنا</h2>
+        <form id="contactForm">
+          <label for="name">الاسم:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="أدخل اسمك"
+            required
+          />
+
+          <label for="email">البريد الإلكتروني:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="أدخل بريدك الإلكتروني"
+            required
+          />
+
+          <label for="message">الرسالة:</label>
+          <textarea
+            id="message"
+            name="message"
+            placeholder="أدخل رسالتك"
+            required
+          ></textarea>
+
+          <button type="submit" class="send-btn">إرسال</button>
+        </form>
+      </div>
+
+      <div class="map-container">
+        <h2>موقع العمل</h2>
+        <div id="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3520.097987662484!2d30.765595825730145!3d28.082553808845233!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145b25a16f1b3643%3A0x3ca8236d47bb068a!2z2KPYqNmIINmH2YTYp9mE2Iwg2YLYs9mFINin2YTZhdmG2YrYp9iMINir2KfZhNirINin2YTZhdmG2YrYp9iMINmF2K3Yp9mB2LjYqSDYp9mE2YXZhtmK2Kc!5e0!3m2!1sar!2seg!4v1732034265635!5m2!1sar!2seg"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY&callback=initMap"
+      async
+      defer
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
